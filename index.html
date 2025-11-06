@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>mmyji — Boothorama360</title>
+  <meta name="description" content="mmyji crée des expériences élégantes et intuitives. Découvrez Boothorama360, notre application pour sublimer vos événements en 360°." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .glass { backdrop-filter: saturate(160%) blur(8px); background: rgba(255,255,255,.6); }
+    @media (prefers-color-scheme: dark) { .glass { background: rgba(17,25,40,.45); } }
+    .gradient { background: radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,.25), transparent), radial-gradient(900px 500px at 90% -20%, rgba(236,72,153,.22), transparent); }
+  </style>
+  <meta property="og:title" content="mmyji">
+  <meta property="og:description" content="Découvrez Boothorama360, l'app 360° conçue par mmyji pour des expériences photo/vidéo immersives.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-image.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "mmyji",
+    "url": "https://mmyji.com",
+    "logo": "https://mmyji.com/logo.png",
+    "email": "contact@mmyji.com"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Boothorama360",
+    "operatingSystem": "iOS",
+    "applicationCategory": "https://schema.org/PhotographAction",
+    "publisher": {"@type": "Organization", "name": "mmyji"},
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}
+  }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 gradient">
+  <!-- Header -->
+  <header class="sticky top-0 z-40">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="glass rounded-2xl mt-6 mb-4 flex items-center justify-between border border-white/20 dark:border-white/10 px-4 py-3">
+        <a href="#" class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500"></div>
+          <span class="font-semibold tracking-tight">mmyji</span>
+        </a>
+        <nav class="hidden gap-6 md:flex text-sm">
+          <a href="#app" class="hover:opacity-80">Boothorama360</a>
+          <a href="#features" class="hover:opacity-80">Fonctionnalités</a>
+          <a href="#contact" class="hover:opacity-80">Contact</a>
+          <a href="#privacy" class="hover:opacity-80">Confidentialité</a>
+        </nav>
+        <a href="#contact" class="inline-flex items-center rounded-xl px-4 py-2 text-sm font-medium bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:opacity-90 transition">Nous écrire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-7xl px-6 pt-10 pb-16">
+    <div class="grid items-center gap-10 md:grid-cols-2">
+      <div>
+        <p class="inline-block rounded-full border border-slate-200/50 dark:border-white/10 px-3 py-1 text-xs uppercase tracking-wider text-slate-600 dark:text-slate-300">mmyji présente</p>
+        <h1 class="mt-4 text-4xl font-bold leading-tight md:text-5xl">Boothorama360<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-fuchsia-500"> — capturez l’instant en 360°</span></h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Une application élégante et intuitive pour créer des expériences photo/vidéo immersives sur vos événements. Simple à installer, plaisante à utiliser, pensée pour les pros.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#contact" class="rounded-xl bg-indigo-600 px-5 py-3 text-white font-medium hover:opacity-90">Demander une démo</a>
+          <a href="#features" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium hover:bg-white/60 hover:dark:bg-white/5">Voir les fonctions</a>
+        </div>
+        <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">Bientôt disponible sur l’App Store.</p>
+      </div>
+      <div class="relative">
+        <div class="absolute inset-0 -z-10 blur-3xl opacity-40 bg-gradient-to-tr from-indigo-500 to-fuchsia-500 rounded-[36px]"></div>
+        <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-4 shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1400&auto=format&fit=crop" alt="Aperçu de l'app Boothorama360" class="rounded-2xl object-cover aspect-[4/3] w-full" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="rounded-2xl border border-slate-200/60 dark:border-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <h3 class="text-lg font-semibold">Captation 360° fluide</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Des vidéos circulaires fluides, stabilisées et prêtes à partager instantanément.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200/60 dark:border-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <h3 class="text-lg font-semibold">Branding sur‑mesure</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Ajoutez votre logo, vos couleurs et des overlays pour une expérience de marque cohérente.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200/60 dark:border-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <h3 class="text-lg font-semibold">Partage instantané</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">AirDrop, QR code, e‑mail — vos invités repartent avec leur souvenir en quelques secondes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- App section -->
+  <section id="app" class="mx-auto max-w-7xl px-6 py-16">
+    <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-10">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-semibold">À propos de mmyji</h2>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">mmyji conçoit des applications utiles, élégantes et fiables. Notre mission : rendre la technologie invisible pour laisser toute la place à l’expérience.</p>
+          <ul class="mt-4 space-y-2 text-slate-600 dark:text-slate-300">
+            <li>• Focus produit & qualité</li>
+            <li>• Support proche et réactif</li>
+            <li>• Respect de la confidentialité</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold">Boothorama360</h2>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">Pensée pour les événements, agences et lieux de réception, Boothorama360 simplifie la captation 360° et l’animation photo pour des souvenirs mémorables.</p>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-xl bg-indigo-600 px-5 py-3 text-white font-medium hover:opacity-90">Nous contacter</a>
+            <a aria-disabled="true" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium opacity-60 cursor-not-allowed">App Store (bientôt)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-3xl px-6 py-16">
+    <div class="rounded-3xl border border-slate-200/60 dark:border-white/10 p-8 bg-white/70 dark:bg-white/5">
+      <h2 class="text-2xl font-semibold">Contact</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Une question, une démo, un partenariat ? Écrivez‑nous.</p>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <a href="mailto:contact@mmyji.com" class="rounded-2xl border border-slate-300/60 dark:border-white/10 p-5 hover:bg-white/60 hover:dark:bg-white/5 transition">
+          <div class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">E‑mail</div>
+          <div class="mt-1 text-lg font-medium">contact@mmyji.com</div>
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">Adresse légale (facultative ici) • France</p>
+    </div>
+  </section>
+
+  <!-- Privacy / Mentions -->
+  <section id="privacy" class="mx-auto max-w-3xl px-6 pb-24">
+    <div class="rounded-3xl border border-slate-200/60 dark:border-white/10 p-8 bg-white/70 dark:bg-white/5">
+      <h2 class="text-2xl font-semibold">Confidentialité</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Nous collectons un minimum de données, strictement nécessaires au fonctionnement de l’application et au support client. Aucune donnée n’est vendue à des tiers.</p>
+      <ul class="mt-3 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Pas de pistage publicitaire tiers</li>
+        <li>Conservation limitée des journaux techniques</li>
+        <li>Suppression sur simple demande à <a href="mailto:privacy@mmyji.com" class="underline">privacy@mmyji.com</a></li>
+      </ul>
+      <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">Version courte pour la mise en ligne. Vous pourrez la remplacer par une politique détaillée ultérieurement.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200/60 dark:border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500 dark:text-slate-400">© <span id="year"></span> mmyji — Tous droits réservés.</p>
+      <div class="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-4">
+        <a href="#privacy" class="hover:opacity-80">Confidentialité</a>
+        <a href="#" class="hover:opacity-80">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
