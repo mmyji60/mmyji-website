@@ -16,7 +16,7 @@
     @media (prefers-color-scheme: dark) { .glass { background: rgba(17,25,40,.45); } }
     .gradient { background: radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,.25), transparent), radial-gradient(900px 500px at 90% -20%, rgba(236,72,153,.22), transparent); }
   </style>
-  <meta property="og:title" content="mmyji">
+  <meta property="og:title" content="mmyji — Boothorama360">
   <meta property="og:description" content="Découvrez Boothorama360, l'app 360° conçue par mmyji pour des expériences photo/vidéo immersives.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/og-image.jpg">
@@ -82,8 +82,46 @@
       </div>
       <div class="relative">
         <div class="absolute inset-0 -z-10 blur-3xl opacity-40 bg-gradient-to-tr from-indigo-500 to-fuchsia-500 rounded-[36px]"></div>
-        <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-4 shadow-2xl">
-          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1400&auto=format&fit=crop" alt="Aperçu de l'app Boothorama360" class="rounded-2xl object-cover aspect-[4/3] w-full" />
+        <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-0 shadow-2xl overflow-hidden">
+          <div id="carousel" class="relative group">
+            <!-- Slides -->
+            <div class="relative aspect-[4/3] w-full">
+              <img src="images/Screenshot_events.png" alt="Boothorama360 – aperçu 1" class="slide absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-500" />
+              <img src="images/Screenshot_musics.png" alt="Boothorama360 – aperçu 2" class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" />
+              <img src="images/Screenshot_sequences.png" alt="Boothorama360 – aperçu 3" class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" />
+            </div>
+            <!-- Controls -->
+            <button type="button" aria-label="Image précédente" class="opacity-0 group-hover:opacity-100 focus:opacity-100 transition absolute left-3 top-1/2 -translate-y-1/2 rounded-xl bg-white/80 dark:bg-black/40 px-3 py-2 border border-white/30 dark:border-white/10">‹</button>
+            <button type="button" aria-label="Image suivante" class="opacity-0 group-hover:opacity-100 focus:opacity-100 transition absolute right-3 top-1/2 -translate-y-1/2 rounded-xl bg-white/80 dark:bg.black/40 px-3 py-2 border border-white/30 dark:border-white/10">›</button>
+            <!-- Dots -->
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2">
+              <button class="dot h-2.5 w-2.5 rounded-full bg-white/70 dark:bg-white/30 ring-1 ring-white/40" aria-label="Aller à l’image 1"></button>
+              <button class="dot h-2.5 w-2.5 rounded-full bg-white/50 dark:bg-white/20 ring-1 ring-white/30" aria-label="Aller à l’image 2"></button>
+              <button class="dot h-2.5 w-2.5 rounded-full bg-white/50 dark:bg.white/20 ring-1 ring-white/30" aria-label="Aller à l’image 3"></button>
+            </div>
+          </div>
+          <script>
+            (function(){
+              const root = document.currentScript.previousElementSibling; // #carousel
+              const slides = root.querySelectorAll('.slide');
+              const dots = root.querySelectorAll('.dot');
+              const [prev, next] = root.querySelectorAll('button[aria-label]');
+              let i = 0, timer;
+              const show = (n)=>{
+                i = (n + slides.length) % slides.length;
+                slides.forEach((el, idx)=> el.style.opacity = idx===i ? '1' : '0');
+                dots.forEach((d, idx)=> d.style.opacity = idx===i ? '0.95' : '0.6');
+              };
+              const play = ()=> timer = setInterval(()=> show(i+1), 5000);
+              const stop = ()=> timer && clearInterval(timer);
+              prev.addEventListener('click', ()=>{ show(i-1); });
+              next.addEventListener('click', ()=>{ show(i+1); });
+              dots.forEach((d, idx)=> d.addEventListener('click', ()=> show(idx)));
+              root.addEventListener('mouseenter', stop);
+              root.addEventListener('mouseleave', play);
+              show(0); play();
+            })();
+          </script>
         </div>
       </div>
     </div>
@@ -142,6 +180,10 @@
           <div class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">E‑mail</div>
           <div class="mt-1 text-lg font-medium">contact@mmyji.com</div>
         </a>
+        <a href="mailto:support@mmyji.com" class="rounded-2xl border border-slate-300/60 dark:border-white/10 p-5 hover:bg-white/60 hover:dark:bg-white/5 transition">
+          <div class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">Support</div>
+          <div class="mt-1 text-lg font-medium">support@mmyji.com</div>
+        </a>
       </div>
       <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">Adresse légale (facultative ici) • France</p>
     </div>
@@ -155,6 +197,7 @@
       <ul class="mt-3 list-disc pl-5 text-slate-600 dark:text-slate-300">
         <li>Pas de pistage publicitaire tiers</li>
         <li>Conservation limitée des journaux techniques</li>
+        <li>Suppression sur simple demande à <a href="mailto:privacy@mmyji.com" class="underline">privacy@mmyji.com</a></li>
       </ul>
       <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">Version courte pour la mise en ligne. Vous pourrez la remplacer par une politique détaillée ultérieurement.</p>
     </div>
