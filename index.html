@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>mmyji — Boothorama360</title>
-  <meta name="description" content="mmyji crée des expériences élégantes et intuitives. Découvrez Boothorama360, notre application pour sublimer vos événements en 360°." />
+  <title>mmyji — Apps iOS</title>
+  <meta name="description" content="mmyji crée des expériences élégantes et intuitives. Découvrez Boothorama360 et FléchiMots, nos applications iOS pour vos événements et votre esprit." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,15 +16,15 @@
     @media (prefers-color-scheme: dark) { .glass { background: rgba(17,25,40,.45); } }
     .gradient { background: radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,.25), transparent), radial-gradient(900px 500px at 90% -20%, rgba(236,72,153,.22), transparent); }
   </style>
-  <meta property="og:title" content="mmyji — Boothorama360">
-  <meta property="og:description" content="Découvrez Boothorama360, l'app 360° conçue par mmyji pour des expériences vidéos immersives.">
+  <meta property="og:title" content="mmyji — Apps iOS">
+  <meta property="og:description" content="Découvrez Boothorama360 et FléchiMots, des applications iOS conçues par mmyji pour des expériences élégantes et intuitives.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/og-image.jpg">
   <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico">
   
-  <!-- Schema.org -->
+  <!-- Schema.org Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,6 +35,8 @@
     "email": "contact@mmyji.com"
   }
   </script>
+
+  <!-- Schema.org Boothorama360 -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,6 +46,23 @@
     "applicationCategory": "https://schema.org/PhotographAction",
     "publisher": {"@type": "Organization", "name": "mmyji"},
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}
+  }
+  </script>
+
+  <!-- Schema.org FléchiMots -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FléchiMots",
+    "operatingSystem": "iOS",
+    "applicationCategory": "https://schema.org/GameApplication",
+    "publisher": {"@type": "Organization", "name": "mmyji"},
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
   }
   </script>
 </head>
@@ -57,10 +76,11 @@
           <span class="font-semibold tracking-tight">mmyji</span>
         </a>
         <nav class="hidden gap-6 md:flex text-sm">
-          <a href="#app" class="hover:opacity-80">Boothorama360</a>
+          <a href="#app-boothorama" class="hover:opacity-80">Boothorama360</a>
+          <a href="#app-flechimots" class="hover:opacity-80">FléchiMots</a>
           <a href="#features" class="hover:opacity-80">Fonctionnalités</a>
-          <a href="#contact" class="hover:opacity-80">Contact</a>
-          <a href="#privacy" class="hover:opacity-80">Confidentialité</a>
+          <a href="#privacy" class="hover:opacity-80">Confidentialité (général)</a>
+          <a href="#privacy-flechimots" class="hover:opacity-80">FléchiMots — Privacy & Terms</a>
         </nav>
         <a href="#contact" class="inline-flex items-center rounded-xl px-4 py-2 text-sm font-medium bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:opacity-90 transition">Nous écrire</a>
       </div>
@@ -72,13 +92,21 @@
     <div class="grid items-center gap-10 md:grid-cols-2">
       <div>
         <p class="inline-block rounded-full border border-slate-200/50 dark:border-white/10 px-3 py-1 text-xs uppercase tracking-wider text-slate-600 dark:text-slate-300">mmyji présente</p>
-        <h1 class="mt-4 text-4xl font-bold leading-tight md:text-5xl">Boothorama360<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-fuchsia-500"> — capturez l’instant en 360°</span></h1>
-        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Une application élégante et intuitive pour créer des expériences vidéos immersives sur vos événements. Simple à installer, plaisante à utiliser, pensée pour les pros.</p>
+        <h1 class="mt-4 text-4xl font-bold leading-tight md:text-5xl">
+          Des apps iOS
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-fuchsia-500">
+            élégantes & intuitives
+          </span>
+        </h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+          Boothorama360 pour sublimer vos événements en 360° et FléchiMots pour entraîner votre esprit avec des mots fléchés quotidiens.
+          Pensées pour être belles, simples et fiables.
+        </p>
         <div class="mt-6 flex flex-wrap items-center gap-3">
-          <a href="#contact" class="rounded-xl bg-indigo-600 px-5 py-3 text-white font-medium hover:opacity-90">Demander une démo</a>
-          <a href="#features" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium hover:bg-white/60 hover:dark:bg-white/5">Voir les fonctions</a>
+          <a href="#app-boothorama" class="rounded-xl bg-indigo-600 px-5 py-3 text-white font-medium hover:opacity-90">Découvrir Boothorama360</a>
+          <a href="#app-flechimots" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium hover:bg-white/60 hover:dark:bg-white/5">Découvrir FléchiMots</a>
         </div>
-        <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">Bientôt disponible sur l’App Store.</p>
+        <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">Applications en cours de déploiement sur l’App Store.</p>
       </div>
       <div class="relative">
         <div class="absolute inset-0 -z-10 blur-3xl opacity-40 bg-gradient-to-tr from-indigo-500 to-fuchsia-500 rounded-[36px]"></div>
@@ -127,44 +155,101 @@
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- Features (général) -->
   <section id="features" class="mx-auto max-w-7xl px-6 py-16">
     <div class="grid gap-8 md:grid-cols-3">
       <div class="rounded-2xl border border-slate-200/60 dark:border-white/10 p-6 bg-white/70 dark:bg-white/5">
-        <h3 class="text-lg font-semibold">Captation 360° fluide</h3>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">Des vidéos circulaires fluides, stabilisées et prêtes à partager instantanément.</p>
+        <h3 class="text-lg font-semibold">Expérience soignée</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Animations fluides, interfaces claires, et une attention particulière aux petits détails qui font la différence.</p>
       </div>
       <div class="rounded-2xl border border-slate-200/60 dark:border-white/10 p-6 bg-white/70 dark:bg-white/5">
-        <h3 class="text-lg font-semibold">Branding sur‑mesure</h3>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">Ajoutez votre logo, vos couleurs et des overlays pour une expérience de marque cohérente.</p>
+        <h3 class="text-lg font-semibold">Respect de la vie privée</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Collecte minimale de données, utilisation des services Apple et de tiers de confiance, aucune revente à des tiers.</p>
       </div>
       <div class="rounded-2xl border border-slate-200/60 dark:border-white/10 p-6 bg-white/70 dark:bg-white/5">
-        <h3 class="text-lg font-semibold">Partage instantané</h3>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">AirDrop, QR code, e‑mail — vos invités repartent avec leur souvenir en quelques secondes.</p>
+        <h3 class="text-lg font-semibold">Support réactif</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Une équipe disponible par e-mail pour vous aider rapidement en cas de besoin.</p>
       </div>
     </div>
   </section>
 
-  <!-- App section -->
-  <section id="app" class="mx-auto max-w-7xl px-6 py-16">
+  <!-- App Boothorama360 -->
+  <section id="app-boothorama" class="mx-auto max-w-7xl px-6 py-16">
     <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-10">
       <div class="grid gap-8 md:grid-cols-2">
         <div>
-          <h2 class="text-2xl font-semibold">À propos de mmyji</h2>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">mmyji conçoit des applications utiles, élégantes et fiables. Notre mission : rendre la technologie invisible pour laisser toute la place à l’expérience.</p>
+          <h2 class="text-2xl font-semibold">Boothorama360</h2>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            Une application élégante et intuitive pour créer des expériences vidéos immersives sur vos événements.
+            Simple à installer, plaisante à utiliser, pensée pour les pros.
+          </p>
           <ul class="mt-4 space-y-2 text-slate-600 dark:text-slate-300">
-            <li>• Focus produit & qualité</li>
-            <li>• Support proche et réactif</li>
-            <li>• Respect de la confidentialité</li>
+            <li>• Captation 360° fluide & stabilisée</li>
+            <li>• Branding sur-mesure (logo, couleurs, overlays)</li>
+            <li>• Partage instantané : AirDrop, QR code, e-mail</li>
           </ul>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-xl bg-indigo-600 px-5 py-3 text-white font-medium hover:opacity-90">Demander une démo</a>
+            <a aria-disabled="true" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium opacity-60 cursor-not-allowed">App Store (bientôt)</a>
+          </div>
         </div>
         <div>
-          <h2 class="text-2xl font-semibold">Boothorama360</h2>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">Pensée pour les événements, agences et lieux de réception, Boothorama360 simplifie la captation 360° pour des souvenirs mémorables.</p>
+          <h3 class="text-lg font-semibold">Pour qui ?</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            Boothorama360 est pensé pour les agences événementielles, les lieux de réception, les marques et les
+            organisateurs qui veulent offrir une expérience 360° mémorable, sans complication technique.
+          </p>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            Nous travaillons en étroite collaboration avec nos clients pour adapter les fonctionnalités à leurs besoins
+            (workflow, branding, export…).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App FléchiMots -->
+  <section id="app-flechimots" class="mx-auto max-w-7xl px-6 py-16">
+    <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-10">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-semibold">FléchiMots</h2>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            FléchiMots est une application de mots fléchés moderne pour iOS, avec une nouvelle grille inédite chaque jour
+            (hors week-end), des quêtes à remplir et un classement entre joueurs.
+          </p>
+          <ul class="mt-4 space-y-2 text-slate-600 dark:text-slate-300">
+            <li>• 1 grille inédite par jour du lundi au vendredi</li>
+            <li>• Grilles de difficulté progressive et définitions soignées</li>
+            <li>• Système de points et de quêtes pour débloquer des trophées</li>
+            <li>• Classement joueur pour comparer vos performances</li>
+          </ul>
           <div class="mt-5 flex flex-wrap gap-3">
-            <a href="#contact" class="rounded-xl bg-indigo-600 px-5 py-3 text-white font-medium hover:opacity-90">Nous contacter</a>
-            <a aria-disabled="true" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium opacity-60 cursor-not-allowed">App Store (bientôt)</a>
+            <a aria-disabled="true" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium opacity-60 cursor-not-allowed">
+              Télécharger sur l’App Store (lien à venir)
+            </a>
           </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Points, pubs et achats intégrés</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            Chaque grille terminée vous fait gagner des points. Ces points peuvent être échangés dans une boutique
+            intégrée contre des bonus (par exemple, aide ou révélations). Certaines quêtes complétées débloquent
+            des trophées qui alimentent un classement entre joueurs.
+          </p>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            Vous pouvez également obtenir des points supplémentaires :
+          </p>
+          <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+            <li>en regardant volontairement des publicités récompensées ;</li>
+            <li>en effectuant des achats intégrés dans l’application.</li>
+          </ul>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">
+            L’application utilise Firebase pour gérer un identifiant joueur, vos statistiques, votre avancement dans les
+            quêtes, votre solde de points et vos trophées, de manière synchronisée et sécurisée.
+            Pour plus de détails, consultez la section
+            <a href="#privacy-flechimots" class="underline hover:opacity-80">FléchiMots — Privacy & Terms of Use</a>.
+          </p>
         </div>
       </div>
     </div>
@@ -174,29 +259,157 @@
   <section id="contact" class="mx-auto max-w-3xl px-6 py-16">
     <div class="rounded-3xl border border-slate-200/60 dark:border-white/10 p-8 bg-white/70 dark:bg-white/5">
       <h2 class="text-2xl font-semibold">Contact</h2>
-      <p class="mt-2 text-slate-600 dark:text-slate-300">Une question, une démo, un partenariat ? Écrivez‑nous.</p>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Une question, une démo, un partenariat ? Écrivez-nous.</p>
       <div class="mt-6 grid gap-6 md:grid-cols-2">
         <a href="mailto:contact@mmyji.com" class="rounded-2xl border border-slate-300/60 dark:border-white/10 p-5 hover:bg-white/60 hover:dark:bg-white/5 transition">
-          <div class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">E‑mail</div>
+          <div class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">E-mail</div>
           <div class="mt-1 text-lg font-medium">contact@mmyji.com</div>
         </a>
         <a href="mailto:support@mmyji.com" class="rounded-2xl border border-slate-300/60 dark:border-white/10 p-5 hover:bg-white/60 hover:dark:bg-white/5 transition">
           <div class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">Support</div>
-          <div class="mt-1 text-lg font-medium">contact@mmyji.com</div>
+          <div class="mt-1 text-lg font-medium">support@mmyji.com</div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Privacy / Mentions -->
-  <section id="privacy" class="mx-auto max-w-3xl px-6 pb-24">
+  <!-- Privacy / Mentions (général mmyji) -->
+  <section id="privacy" class="mx-auto max-w-3xl px-6 pb-16">
     <div class="rounded-3xl border border-slate-200/60 dark:border-white/10 p-8 bg-white/70 dark:bg-white/5">
-      <h2 class="text-2xl font-semibold">Confidentialité</h2>
-      <p class="mt-2 text-slate-600 dark:text-slate-300">Nous collectons un minimum de données, strictement nécessaires au fonctionnement de l’application et au support client. Aucune donnée n’est vendue à des tiers.</p>
+      <h2 class="text-2xl font-semibold">Confidentialité (général)</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Nous concevons nos applications pour collecter un minimum de données, strictement nécessaires
+        au fonctionnement, à la sécurité, aux statistiques anonymisées et au support client.
+      </p>
       <ul class="mt-3 list-disc pl-5 text-slate-600 dark:text-slate-300">
-        <li>Pas de pistage publicitaire tiers</li>
-        <li>Conservation limitée des journaux techniques</li>
+        <li>Pas de revente de vos données à des tiers.</li>
+        <li>Utilisation éventuelle des outils d’analyse fournis par Apple (par exemple, rapports de plantage anonymisés).</li>
+        <li>Conservation limitée des journaux techniques nécessaires au diagnostic et à la sécurité.</li>
       </ul>
+      <p class="mt-3 text-slate-600 dark:text-slate-300">
+        Certaines applications peuvent utiliser des services tiers (par exemple : Firebase, services publicitaires, achats intégrés).
+        Dans ce cas, des informations spécifiques s’appliquent. Pour FléchiMots, voir la section
+        <a href="#privacy-flechimots" class="underline hover:opacity-80">FléchiMots — Privacy & Terms of Use</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Privacy & Terms of Use — FléchiMots -->
+  <section id="privacy-flechimots" class="mx-auto max-w-3xl px-6 pb-24">
+    <div class="rounded-3xl border border-slate-200/60 dark:border-white/10 p-8 bg-white/70 dark:bg-white/5">
+      <h2 class="text-2xl font-semibold">FléchiMots — Privacy & Terms of Use</h2>
+
+      <h3 class="mt-4 text-lg font-semibold">1. Données collectées</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        FléchiMots stocke des données à la fois localement sur votre appareil et via Firebase (un service proposé par Google)
+        pour assurer la synchronisation et le bon fonctionnement des fonctionnalités en ligne.
+      </p>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        <span class="font-semibold">Données stockées localement sur votre appareil :</span>
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Progression dans les grilles (cases remplies, grilles terminées).</li>
+        <li>Préférences d’affichage (thème clair/sombre, options d’aide, etc.).</li>
+      </ul>
+
+      <p class="mt-3 text-slate-600 dark:text-slate-300">
+        <span class="font-semibold">Données stockées et traitées via Firebase :</span>
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Un identifiant joueur (par exemple un identifiant généré automatiquement).</li>
+        <li>Vos statistiques de jeu (nombre de grilles jouées/terminées, temps de jeu, etc.).</li>
+        <li>Votre avancement dans les quêtes et les trophées obtenus.</li>
+        <li>Votre solde de points et l’historique des gains (grilles terminées, quêtes, pubs récompensées, achats intégrés).</li>
+        <li>Les informations techniques nécessaires au fonctionnement du service (par exemple : type d’appareil, version de l’application).</li>
+      </ul>
+
+      <p class="mt-3 text-slate-600 dark:text-slate-300">
+        <span class="font-semibold">Données liées aux publicités :</span> si vous choisissez de visionner des publicités
+        pour obtenir des points, des partenaires publicitaires peuvent collecter certaines informations techniques
+        liées à votre appareil et à l’affichage des annonces (par exemple : identifiant publicitaire, informations de performance de la publicité).
+        Ces traitements sont encadrés par leurs propres politiques de confidentialité.
+      </p>
+
+      <h3 class="mt-4 text-lg font-semibold">2. Utilisation des données</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Les données sont utilisées pour :
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Assurer le bon fonctionnement de FléchiMots (sauvegarde et synchronisation de votre progression, gestion des quêtes, trophées et points).</li>
+        <li>Vous permettre de retrouver votre profil de joueur (statistiques, classement, boutique de points) sur plusieurs sessions ou appareils.</li>
+        <li>Attribuer correctement les récompenses suite aux grilles terminées, quêtes complétées, publicités visionnées et achats intégrés.</li>
+        <li>Améliorer la stabilité et l’ergonomie de l’application via des statistiques anonymisées et des rapports de plantage.</li>
+      </ul>
+
+      <h3 class="mt-4 text-lg font-semibold">3. Publicités et achats intégrés</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        FléchiMots propose :
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li><span class="font-semibold">Des publicités récompensées</span> : vous pouvez choisir de regarder une publicité pour obtenir des points bonus.</li>
+        <li><span class="font-semibold">Des achats intégrés</span> : ils vous permettent d’acheter des points ou des avantages dans l’application.</li>
+      </ul>
+      <p class="mt-3 text-slate-600 dark:text-slate-300">
+        Lors de ces opérations, des informations peuvent être partagées avec :
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Apple (gestion des achats via l’App Store).</li>
+        <li>Les prestataires publicitaires (affichage et mesure des publicités).</li>
+        <li>Firebase (mise à jour de votre solde de points, de vos trophées et de vos statistiques).</li>
+      </ul>
+
+      <h3 class="mt-4 text-lg font-semibold">4. Partage des données</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Nous ne vendons pas vos données personnelles. Les données peuvent être partagées avec :
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Firebase (Google), en tant que prestataire technique pour l’hébergement et le traitement des données de jeu.</li>
+        <li>Apple, dans le cadre de l’utilisation de l’App Store et des services système (achats intégrés, rapports de plantage, etc.).</li>
+        <li>Des partenaires publicitaires, uniquement dans le cadre de l’affichage de publicités si vous choisissez d’en visionner.</li>
+        <li>Nos prestataires d’e-mail si vous nous contactez pour du support.</li>
+      </ul>
+
+      <h3 class="mt-4 text-lg font-semibold">5. Stockage & durée de conservation</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Les données de jeu sont conservées aussi longtemps que nécessaire pour vous fournir le service (profil joueur, classement, historique des points).
+        Vous pouvez demander la suppression de votre profil de joueur en nous écrivant à
+        <a href="mailto:contact@mmyji.com" class="underline hover:opacity-80">contact@mmyji.com</a>.
+      </p>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Les données stockées localement sur votre appareil peuvent être supprimées en désinstallant l’application
+        ou en réinitialisant les données depuis les réglages de votre appareil, le cas échéant.
+      </p>
+
+      <h3 class="mt-4 text-lg font-semibold">6. Vos droits</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Selon votre pays de résidence, vous pouvez disposer de droits d’accès, de rectification, de suppression ou de limitation du traitement de vos données.
+        Pour toute demande, vous pouvez nous contacter à :
+        <a href="mailto:contact@mmyji.com" class="underline hover:opacity-80">contact@mmyji.com</a>.
+      </p>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Vous pouvez également :
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>Supprimer l’application pour effacer les données locales enregistrées par FléchiMots.</li>
+        <li>Adapter vos paramètres de confidentialité et de partage de diagnostics dans les réglages de votre appareil Apple.</li>
+      </ul>
+
+      <h3 class="mt-4 text-lg font-semibold">7. Conditions d’utilisation (Terms of Use)</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        En utilisant FléchiMots, vous acceptez les conditions suivantes :
+      </p>
+      <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
+        <li>L’application est fournie « en l’état », sans garantie d’absence d’erreur ou de disponibilité continue.</li>
+        <li>Les publicités et achats intégrés proposés dans l’application sont facultatifs, et les achats ne sont pas transférables d’un compte à un autre.</li>
+        <li>Vous vous engagez à ne pas tenter de modifier, décompiler ou redistribuer l’application sans notre accord écrit.</li>
+        <li>L’utilisation de l’application doit se faire dans le respect de la législation en vigueur dans votre pays.</li>
+        <li>Nous nous réservons le droit de mettre à jour l’application et ces conditions à tout moment.</li>
+      </ul>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        En cas de modification importante de ces conditions ou de la politique de confidentialité,
+        nous mettrons cette page à jour. La poursuite de l’utilisation de FléchiMots après la mise à jour
+        vaut acceptation des nouvelles conditions.
+      </p>
     </div>
   </section>
 
@@ -205,7 +418,8 @@
     <div class="mx-auto max-w-7xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm text-slate-500 dark:text-slate-400">© <span id="year"></span> mmyji — Tous droits réservés.</p>
       <div class="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-4">
-        <a href="#privacy" class="hover:opacity-80">Confidentialité</a>
+        <a href="#privacy" class="hover:opacity-80">Confidentialité (général)</a>
+        <a href="#privacy-flechimots" class="hover:opacity-80">FléchiMots — Privacy & Terms</a>
         <a href="#" class="hover:opacity-80">Mentions légales</a>
       </div>
     </div>
