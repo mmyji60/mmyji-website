@@ -209,51 +209,110 @@
   </section>
 
   <!-- App FléchiMots -->
-  <section id="app-flechimots" class="mx-auto max-w-7xl px-6 py-16">
-    <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-10">
-      <div class="grid gap-8 md:grid-cols-2">
-        <div>
-          <h2 class="text-2xl font-semibold">FléchiMots</h2>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">
-            FléchiMots est une application de mots fléchés moderne pour iOS, avec une nouvelle grille inédite chaque jour
-            (hors week-end), des quêtes à remplir et un classement entre joueurs.
-          </p>
-          <ul class="mt-4 space-y-2 text-slate-600 dark:text-slate-300">
-            <li>• 1 grille inédite par jour du lundi au vendredi</li>
-            <li>• Grilles de difficulté progressive et définitions soignées</li>
-            <li>• Système de points et de quêtes pour débloquer des trophées</li>
-            <li>• Classement joueur pour comparer vos performances</li>
-          </ul>
-          <div class="mt-5 flex flex-wrap gap-3">
-            <a aria-disabled="true" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium opacity-60 cursor-not-allowed">
-              Télécharger sur l’App Store (lien à venir)
-            </a>
-          </div>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold">Points, pubs et achats intégrés</h3>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">
-            Chaque grille terminée vous fait gagner des points. Ces points peuvent être échangés dans une boutique
-            intégrée contre des bonus (par exemple, aide ou révélations). Certaines quêtes complétées débloquent
-            des trophées qui alimentent un classement entre joueurs.
-          </p>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">
-            Vous pouvez également obtenir des points supplémentaires :
-          </p>
-          <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300">
-            <li>en regardant volontairement des publicités récompensées ;</li>
-            <li>en effectuant des achats intégrés dans l’application.</li>
-          </ul>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">
-            L’application utilise Firebase pour gérer un identifiant joueur, vos statistiques, votre avancement dans les
-            quêtes, votre solde de points et vos trophées, de manière synchronisée et sécurisée.
-            Pour plus de détails, consultez la section
-            <a href="#privacy-flechimots" class="underline hover:opacity-80">FléchiMots — Privacy & Terms of Use</a>.
-          </p>
+<section id="app-flechimots" class="mx-auto max-w-7xl px-6 py-16">
+  <div class="glass rounded-3xl border border-white/20 dark:border-white/10 p-10">
+    <div class="grid gap-8 md:grid-cols-2 items-center">
+      <!-- Colonne texte -->
+      <div>
+        <h2 class="text-2xl font-semibold">FléchiMots</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">
+          FléchiMots est une application de mots fléchés moderne pour iOS, avec une nouvelle grille inédite chaque jour
+          (hors week-end), des quêtes à remplir et un classement entre joueurs.
+        </p>
+        <ul class="mt-4 space-y-2 text-slate-600 dark:text-slate-300">
+          <li>• 1 grille inédite par jour du lundi au vendredi</li>
+          <li>• Grilles de difficulté progressive et définitions soignées</li>
+          <li>• Quêtes et trophées pour suivre vos exploits</li>
+          <li>• Classement joueur pour comparer vos performances</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a aria-disabled="true" class="rounded-xl border border-slate-300/60 dark:border-white/10 px-5 py-3 font-medium opacity-60 cursor-not-allowed">
+            Télécharger sur l’App Store (lien à venir)
+          </a>
         </div>
       </div>
+
+      <!-- Colonne carrousel -->
+      <div class="relative">
+        <div class="absolute inset-0 -z-10 blur-3xl opacity-40 bg-gradient-to-tr from-indigo-500 to-fuchsia-500 rounded-[32px]"></div>
+        <div class="rounded-3xl border border-white/20 dark:border-white/10 bg-white/70 dark:bg-slate-900/70 shadow-2xl overflow-hidden">
+          <div id="carousel-flechimots" class="relative group">
+            <!-- Slides -->
+            <div class="relative w-full" style="aspect-ratio: 4 / 3;">
+              <img src="images/flechimots_grid.png"
+                   alt="FléchiMots – grille de mots fléchés"
+                   class="slide-flechimots absolute inset-0 h-full w-full object-contain opacity-100 transition-opacity duration-500" />
+              <img src="images/flechimots_daily.png"
+                   alt="FléchiMots – grille quotidienne"
+                   class="slide-flechimots absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500" />
+              <img src="images/flechimots_quests.png"
+                   alt="FléchiMots – quêtes et trophées"
+                   class="slide-flechimots absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500" />
+            </div>
+
+            <!-- Controls -->
+            <button type="button" data-role="prev"
+                    aria-label="Image précédente FléchiMots"
+                    class="opacity-0 group-hover:opacity-100 focus:opacity-100 transition absolute left-3 top-1/2 -translate-y-1/2 rounded-xl bg-white/80 dark:bg-black/40 px-3 py-2 border border-white/30 dark:border-white/10">
+              ‹
+            </button>
+            <button type="button" data-role="next"
+                    aria-label="Image suivante FléchiMots"
+                    class="opacity-0 group-hover:opacity-100 focus:opacity-100 transition absolute right-3 top-1/2 -translate-y-1/2 rounded-xl bg-white/80 dark:bg-black/40 px-3 py-2 border border-white/30 dark:border-white/10">
+              ›
+            </button>
+
+            <!-- Dots -->
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2">
+              <button class="dot-flechimots h-2.5 w-2.5 rounded-full bg-white/70 dark:bg-white/30 ring-1 ring-white/40"
+                      aria-label="Aller à l’image 1"></button>
+              <button class="dot-flechimots h-2.5 w-2.5 rounded-full bg-white/50 dark:bg-white/20 ring-1 ring-white/30"
+                      aria-label="Aller à l’image 2"></button>
+              <button class="dot-flechimots h-2.5 w-2.5 rounded-full bg-white/50 dark:bg-white/20 ring-1 ring-white/30"
+                      aria-label="Aller à l’image 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function() {
+          const root = document.getElementById('carousel-flechimots');
+          if (!root) return;
+          const slides = root.querySelectorAll('.slide-flechimots');
+          const dots = root.querySelectorAll('.dot-flechimots');
+          const prev = root.querySelector('button[data-role="prev"]');
+          const next = root.querySelector('button[data-role="next"]');
+          let i = 0, timer;
+
+          const show = (n) => {
+            i = (n + slides.length) % slides.length;
+            slides.forEach((el, idx) => el.style.opacity = idx === i ? '1' : '0');
+            dots.forEach((d, idx) => d.style.opacity = idx === i ? '0.95' : '0.6');
+          };
+
+          const play = () => {
+            timer = setInterval(() => show(i + 1), 5000);
+          };
+
+          const stop = () => {
+            if (timer) clearInterval(timer);
+          };
+
+          prev.addEventListener('click', () => { show(i - 1); });
+          next.addEventListener('click', () => { show(i + 1); });
+          dots.forEach((d, idx) => d.addEventListener('click', () => show(idx)));
+          root.addEventListener('mouseenter', stop);
+          root.addEventListener('mouseleave', play);
+
+          show(0);
+          play();
+        })();
+      </script>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Contact -->
   <section id="contact" class="mx-auto max-w-3xl px-6 py-16">
